@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kalkulator Clearance Matris</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Kalkulator Clearance Matris</h1>
+    <form id="clearance-form">
+      <label for="thickness">Tebal Plat (mm):</label>
+      <input type="number" id="thickness" required placeholder="Contoh: 5" />
+
+      <label for="material">Jenis Plat:</label>
+      <select id="material" required>
+        <option value="aluminium">Aluminium</option>
+        <option value="sphc">SPHC / CHDG / Steel</option>
+        <option value="stainless">Stainless Steel</option>
+      </select>
+
+      <label for="tool">Jenis Tool:</label>
+      <select id="tool" required>
+        <option value="1">Punch & Dies</option>
+        <option value="0.5">Cutter</option>
+      </select>
+
+      <button type="button" onclick="calculateClearance()">Hitung Clearance</button>
+    </form>
+
+    <div id="result"></div>
+    <p>Made by Machining Center</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
